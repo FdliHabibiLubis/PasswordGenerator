@@ -23,18 +23,25 @@
           <input
             type="number"
             class="form-control form-control-lg"
-            id="passwordLength    "
+            id="passwordLength"
           />
           <label for="password" class="text-uppercase fw-bold">Password</label>
           <input
             type="password"
+            disabled
             class="form-control form-control-lg"
             id="password"
           />
-          <button class="btn btn-dark text-uppercase btn-lg mt-2">
+          <button
+            onclick="getPassword()"
+            class="btn btn-dark text-uppercase btn-lg mt-2"
+          >
             Genrated password
           </button>
-          <button class="btn btn-success text-uppercase btn-lg mt-2">
+          <button
+            onclick="savePassword()"
+            class="btn btn-success text-uppercase btn-lg mt-2"
+          >
             Save password
           </button>
         </div>
