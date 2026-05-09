@@ -17,6 +17,11 @@ function generatePassword(length) {
 }
 
 function getPassword() {
+if(passwordLength.value === "") {
+  alert("Please fill in the length of the password");
+  return;
+}
+
   const newPassword = generatePassword(passwordLength.value);
   password.value = newPassword;
   alert("Password has been generated");
