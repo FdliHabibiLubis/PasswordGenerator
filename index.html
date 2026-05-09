@@ -10,41 +10,46 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body style="background-color: #e35336;">
     <div
-      class="container bg-white d-flex justify-content-center align-items-center min-vh-100"
+      class="container d-flex justify-content-center align-items-center min-vh-100"
     >
-      <div class="d-flex justify-content-center align-items-center flex-column">
-        <h1>Password generator</h1>
-        <div class="d-flex flex-column gap-3 mt-3">
-          <label for="passwordLength" class="text-uppercase fw-bold"
-            >Panjang password</label
-          >
-          <input
-            type="number"
-            class="form-control form-control-lg"
-            id="passwordLength"
-          />
-          <label for="password" class="text-uppercase fw-bold">Password</label>
-          <input
-            type="password"
-            disabled
-            class="form-control form-control-lg"
-            id="password"
-          />
-          <button
-            onclick="getPassword()"
-            class="btn btn-primary text-uppercase btn-lg mt-2"
-          >
-            Genrated password
-          </button>
-          <a
-            onclick="savePassword()"
-            class="btn btn-primary text-uppercase btn-lg mt-2"
-            id="saveButton"
-          >
-            Save password
-          </a>
+      <div class="card shadow p-3" style="border-radius: 16px; height: 480px;">
+        <div
+          class="d-flex justify-content-center align-items-center flex-column"
+        >
+            <h1 class="m-auto mt-2">Password generator</h1>
+          <div class="d-flex flex-column gap-3 mt-3">
+            <label for="passwordLength" class="text-uppercase fw-bold"
+              >Panjang password</label
+            >
+            <input
+              type="number"
+              class="form-control form-control-lg"
+              id="passwordLength"
+            />
+            <label for="password" class="text-uppercase fw-bold"
+              >Password</label
+            >
+            <input
+              type="password"
+              disabled
+              class="form-control form-control-lg"
+              id="password"
+            />
+            <button
+              onclick="getPassword()"
+              class="btn shadow text-uppercase btn-lg mt-2" style="background-color: #F5F5DC;"
+            >
+              Genrated password
+            </button>
+            <a
+              onclick="savePassword()"
+              class="btn shadow text-uppercase btn-lg mt-2" style="background: #F5F5DC;"              id="saveButton"
+            >
+              Save password
+            </a>
+          </div>
         </div>
       </div>
     </div>
